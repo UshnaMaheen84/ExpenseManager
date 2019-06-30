@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.lenovo.reminder">
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/ic_account_balance_wallet_black_24dp"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_account_balance_wallet_black_24dp"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name="com.example.lenovo.reminder.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.lenovo.reminder.Login" />
+        <activity android:name="com.example.lenovo.reminder.Signin" />
+        <activity android:name="com.example.lenovo.reminder.MainActivity" />
+        <activity android:name="com.example.lenovo.reminder.Records" />
+
+        <receiver android:name="com.example.lenovo.reminder.Broadcast">
+            <intent-filter>
+                <action android:name="com.example.lenovo.myreminder" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.example.lenovo.reminder.BroadcastReciever">
+            <intent-filter>
+                <action android:name="com.example.lenovo.myreminder" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.example.lenovo.reminder.MyAlarms">
+            <intent-filter>
+                <action android:name="com.example.lenovo.myreminder" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.example.lenovo.reminder.LoanAlarm">
+            <intent-filter>
+                <action android:name="com.example.lenovo.myreminder" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.example.lenovo.reminder.Services.ReminderService" />
+        <service android:name="com.example.lenovo.reminder.Services.LoanService" />
+
+        <activity android:name="com.example.lenovo.reminder.DailyActivity" />
+        <activity android:name="com.example.lenovo.reminder.LoanRecords" />
+        <activity android:name="com.example.lenovo.reminder.IncomeRecord" />
+        <activity android:name="com.example.lenovo.reminder.ReturndateActivity" />
+        <activity android:name="com.example.lenovo.reminder.User_Info"></activity>
+    </application>
+
+</manifest>

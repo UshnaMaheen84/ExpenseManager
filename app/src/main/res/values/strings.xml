@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Expence Manager</string>
+    <string name="name">Enter Your Name</string>
+    <string name="email">Enter Valid Email</string>
+    <string name="phnumber">Enter Valid Phone number </string>
+    <string name="password">Enter Alpha-Numeric Password</string>
+
+    <string-array name="SelectMonth">
+        <item>Choose a month</item>
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>Octuber</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

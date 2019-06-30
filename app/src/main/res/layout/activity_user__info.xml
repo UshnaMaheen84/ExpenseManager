@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color"
+    android:orientation="vertical"
+    >
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="0dp"
+        android:id="@+id/appbaar"
+        tools:layout_editor_absoluteX="8dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            app:title="@string/app_name"
+            app:subtitleTextColor="@android:color/white"
+            app:titleTextColor="@android:color/white">
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:layout_below="@id/appbaar"
+        android:id="@+id/userlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:layout_marginBottom="21dp"
+        android:text="Wallet"
+        android:textColor="@color/colorPrimary"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userlogo"
+        android:id="@+id/tv1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Wallet Amount" />
+
+    <RelativeLayout
+        android:id="@+id/walletid"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_below="@id/tv1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/white"
+        android:padding="3dp">
+
+        <TextView
+            android:id="@+id/mywallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:padding="5dp"
+            android:text="0"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/user_wallet"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:padding="3dp"
+            android:src="@drawable/ic_edit_black_24dp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/walletid"
+        android:id="@+id/tv2"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Daily Limit" />
+
+    <RelativeLayout
+        android:id="@+id/limitid"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/tv2"
+        >
+
+        <TextView
+            android:id="@+id/mywalletlimit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:text="0"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/user_walletlimit"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:clickable="true"
+            android:padding="3dp"
+            android:src="@drawable/ic_edit_black_24dp"
+            />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+        android:layout_below="@id/limitid"
+        android:textSize="15sp"
+        android:textColor="@color/textColor"
+        android:textAllCaps="false"
+        android:background="@drawable/buttonshape"
+        android:layout_marginTop="18dp"
+        android:layout_gravity="center"/>
+
+    <!--<Button-->
+    <!--android:id="@+id/sumry"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginBottom="18dp"-->
+    <!--android:text="Summary"-->
+    <!--android:textSize="15sp"-->
+    <!--android:textStyle="bold" />-->
+
+</RelativeLayout>

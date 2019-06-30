@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    >
+
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--tools:layout_editor_absoluteY="0dp"-->
+        <!--android:id="@+id/appbaar"-->
+        <!--tools:layout_editor_absoluteX="8dp">-->
+
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/toolbar3"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="56dp"-->
+            <!--&gt;-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/toolbar_title"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Income Record"-->
+                <!--android:textSize="9sp"-->
+                <!--android:textColor="@android:color/white"-->
+                <!--android:textStyle="bold" />-->
+
+
+
+            <!--<ImageView-->
+                <!--android:layout_marginEnd="10dp"-->
+                <!--android:id="@+id/logoutincome"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="end"-->
+                <!--android:background="@drawable/ic_exit_to_app_black_24dp"-->
+                <!--android:layout_marginRight="10dp" />-->
+
+            <!--<ImageView-->
+                <!--android:layout_marginEnd="10dp"-->
+                <!--android:id="@+id/wallet"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="end"-->
+                <!--android:background="@drawable/ic_account_balance_wallet_white_24dp"-->
+                <!--android:layout_marginRight="10dp" />-->
+
+
+
+        <!--</android.support.v7.widget.Toolbar>-->
+
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appbaar"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="62dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeWidth="2dp">
+
+            <EditText
+                android:id="@+id/income_source"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Source of income"
+                android:inputType="textCapWords"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            app:boxStrokeColor="@color/colorAccent"
+            app:boxStrokeWidth="2dp">
+
+            <EditText
+                android:id="@+id/income_amount"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="amount"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_below="@id/layout"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginLeft="13dp"
+        >
+
+        <Button
+            android:id="@+id/insertincome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/buttonshape"
+            android:textColor="@color/textColor"
+            android:textAllCaps="false"
+            android:text="Add" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textColor="@color/textColor"
+            android:layout_margin="5dp"
+            android:background="@drawable/buttonshape"
+            android:text="Records"
+            android:id="@+id/income_records"
+            />
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

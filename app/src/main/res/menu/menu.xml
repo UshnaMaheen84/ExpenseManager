@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+     <item
+         android:id="@+id/navigation_record"
+         android:icon="@drawable/cashfilled"
+         android:title="Expense" />
+
+     <item
+         android:id="@+id/navigation_loan"
+         android:icon="@drawable/ic_dashboard_black_24dp"
+         android:title="Loan" />
+     <item
+         android:id="@+id/navigation_income"
+         android:icon="@drawable/cashfilled"
+         android:title="Income" />
+
+
+</menu>
